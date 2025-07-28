@@ -16,6 +16,9 @@ python train_with_autotokenizer.py
 
 # 4. Test your model
 python quick_inference.py
+
+# 5. Chat with the model or generate short stories
+python inference.py
 ```
 
 ## What You Get

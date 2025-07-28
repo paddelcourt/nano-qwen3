@@ -70,12 +70,25 @@ Total iterations     = iterations_per_epoch × num_epochs
 - Increase `batch_size=32` (28,800 ÷ 32 = **900 iterations**, faster)
 - Use `json_files[:2]` (less data variety)
 
-## Files
+## File Structure
 
-- `train_with_autotokenizer.py` - Main training script
-- `inference.py` - Interactive chat & story generation  
-- `quick_inference.py` - Simple test
-- `nano_qwen3.py` - Model implementation
+```
+nano-qwen3/
+├── nano_qwen3.py            # Complete model implementation (Qwen3Config, Qwen3ForCausalLM) 
+├── tokenizer.py             # Qwen3-compatible tokenizer using tiktoken
+├── tiny_stories.py          # Dataset download and processing pipeline
+├── train_with_autotokenizer.py  # Training script (~1800 iterations, 45-60 min)
+├── inference.py             # Full inference with chat/story modes
+├── quick_inference.py       # Simple 3-prompt test
+├── nano-qwen3.ipynb         # Model implementation notebook (in progress)
+├── tinystories/             # Generated dataset directory
+│   ├── *.json              # 50 TinyStories JSON files
+│   ├── train.bin           # Tokenized training data
+│   └── val.bin             # Tokenized validation data
+└── checkpoints/             # Model checkpoints
+    ├── best_model.pth      # Best performing checkpoint
+    └── latest_checkpoint.pth  # Most recent checkpoint
+```
 
 After training, your model will generate basic stories like:
 > "Once upon a time there was a little girl who lived in a small house..."

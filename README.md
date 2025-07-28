@@ -25,6 +25,12 @@ python quick_inference.py
 - **Educational code**: Clean implementation of transformer concepts
 - **Interactive testing**: Chat with your trained model
 
+## Tutorial
+
+On **qwen3-toy-model-tutorial.html**, you will get a step-by-step tutorial on implementing the toy model
+to better grasp the inner workings and key features.
+
+
 ## Key Features
 
 - Grouped Query Attention (GQA) 

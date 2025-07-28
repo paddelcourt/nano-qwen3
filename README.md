@@ -27,7 +27,7 @@ python quick_inference.py
 
 ## Tutorial
 
-On **qwen3-toy-model-tutorial.html**, you will get a step-by-step tutorial on implementing the toy model
+On `qwen3-toy-model-tutorial.html`, you will get a step-by-step tutorial on implementing the toy model
 to better grasp the inner workings and key features.
 
 

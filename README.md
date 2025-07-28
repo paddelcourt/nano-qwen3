@@ -94,3 +94,8 @@ After training, your model will generate basic stories like:
 > "Once upon a time there was a little girl who lived in a small house..."
 
 Perfect for understanding how modern language models work!
+
+
+## Special Thanks
+- Andrej Kaparthy: Source of inspiration for the project and also wrote the `tiny_stories.py`
+- Qwen 3 Team: For making the model and open sourcing the techniques

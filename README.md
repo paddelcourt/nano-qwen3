@@ -1,6 +1,6 @@
 # Nano-Qwen3
 
-A minimal Qwen3 transformer implementation for learning. Train your own language model in under an hour!
+A minimal Qwen3 transformer implementation for learning. Train your own language model based on Tiny Story!
 
 ## Quick Start
 
